@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2048
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UriTest", "Dns_Samples\UriTest.csproj", "{832015B9-30C4-4DB4-8320-54D15289CFFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DnsTest", "DnsTest\DnsTest.csproj", "{65628F40-5A4C-4E5A-9571-C95F81101C1F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{832015B9-30C4-4DB4-8320-54D15289CFFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{832015B9-30C4-4DB4-8320-54D15289CFFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{832015B9-30C4-4DB4-8320-54D15289CFFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{832015B9-30C4-4DB4-8320-54D15289CFFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65628F40-5A4C-4E5A-9571-C95F81101C1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65628F40-5A4C-4E5A-9571-C95F81101C1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65628F40-5A4C-4E5A-9571-C95F81101C1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65628F40-5A4C-4E5A-9571-C95F81101C1F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {85A0A341-32CE-4A50-B761-5F48CC45D181}
+	EndGlobalSection
+EndGlobal
