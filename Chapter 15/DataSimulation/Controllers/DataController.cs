@@ -9,19 +9,21 @@ namespace DataSimulation {
     [ApiController]
     public class DataController : ControllerBase {
 
-[HttpGet("value/{id}")]
-public ActionResult<string> GetString(int id) {
-    Thread.Sleep(5000);
-    return $"{id}: some data";
-}
+        [HttpGet("value/{id}")]
+        public ActionResult<string> GetString(int id) {
+            Thread.Sleep(5000);
+            return $"{id}: some data";
+        }
 
         [HttpGet("values/{id}")]
         public ActionResult<IEnumerable<string>> GetStrings(int id) {
+            Thread.Sleep(5000);
             return new string[] { $"{id}: value1", $"{id + 1}: value2" };
         }
 
         [HttpGet("record/{id}")]
         public ActionResult<OutputRecord> GetRecord(int id) {
+            Thread.Sleep(5000);
             return new OutputRecord() {
                 Id = id,
                 SimpleString = $"{id}: value 1",
@@ -34,6 +36,7 @@ public ActionResult<string> GetString(int id) {
 
         [HttpGet("records/{id}")]
         public ActionResult<IEnumerable<OutputRecord>> GetRecords(int id) {
+            Thread.Sleep(5000);
             return new List<OutputRecord>(){
                 new OutputRecord() {
                     Id = id,
