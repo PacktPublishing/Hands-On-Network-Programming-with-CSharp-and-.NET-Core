@@ -1,3 +1,4 @@
 {"title":"Test Workout 1","workoutType":"Run","comments":"Fast run!","workoutDate":"2019-01-29T00:00:00"}
 {"title":"Test Workout 2","workoutType":"Run","comments":"Faster run!","workoutDate":"2019-01-29T00:00:00"}
 {"title":"Test Workout 3","workoutType":"Jog","comments":"The slowest possible run!","workoutDate":"2019-01-29T00:00:00"}
+{"title":"Test Workout 4","workoutType":"Bike","comments":"Faster biking!","workoutDate":"2019-01-29T00:00:00"}
