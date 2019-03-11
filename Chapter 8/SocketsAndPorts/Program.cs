@@ -34,9 +34,9 @@ namespace SocketsAndPorts {
 
             socket.ReceiveAsync(receiveSeg, SocketFlags.None).Wait();
 
-            string recievedMessage = Encoding.ASCII.GetString(receiveSeg);
+            string receivedMessage = Encoding.ASCII.GetString(receiveSeg);
 
-            foreach (var line in recievedMessage.Split("\r\n")) {
+            foreach (var line in receivedMessage.Split("\r\n")) {
                 Console.WriteLine(line);
             }
             
