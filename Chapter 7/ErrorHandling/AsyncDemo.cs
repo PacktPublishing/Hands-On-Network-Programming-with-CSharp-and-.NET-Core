@@ -24,13 +24,13 @@ namespace ErrorHandling {
                     result.RequestResult = await sr.ReadToEndAsync();
                 }
             } catch (WebException ex) {
-                ProcessException(ex, request);
+                ProcessException(ex);
             }
 
             return result;
         }
 
-        private static void ProcessException(WebException ex, WebRequest request) {
+        private static void ProcessException(WebException ex) {
             switch (ex.Status) {
                 case WebExceptionStatus.ConnectFailure:
                 case WebExceptionStatus.ConnectionClosed:
