@@ -7,7 +7,7 @@ namespace ErrorHandling {
     public static class AsyncDemo {
         public static async Task<ResultObject> AsyncMethodDemo() {
             ResultObject result = new ResultObject();
-            WebRequest request = WebRequest.Create("http://you.com");
+            WebRequest request = WebRequest.Create("http://test-domain.com");
             request.Method = "POST";
             Stream reqStream = request.GetRequestStream();
 
