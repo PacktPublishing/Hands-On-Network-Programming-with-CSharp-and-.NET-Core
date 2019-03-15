@@ -22,8 +22,7 @@ namespace DNSSimulation {
 
             var addresses = new List<IPAddress>();
             foreach (var addressString in ipAddressStrings) {
-                IPAddress newAddress;
-                if (!IPAddress.TryParse(addressString, out newAddress)) {
+                if (!IPAddress.TryParse(addressString, out var newAddress)) {
                     continue;
                 }
                 addresses.Add(newAddress);
