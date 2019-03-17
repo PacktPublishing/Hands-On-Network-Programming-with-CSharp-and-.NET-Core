@@ -18,6 +18,11 @@ namespace AuthSample {
 
         [HttpGet("secret")]
         public ActionResult<string> GetRestrictedResource() {
+            var validClaims = GetClaims().Select(x => x.Type);
+            var userClaims = HttpContext.User.Claims.Select(x => x.Type);
+            if (validClaims.Intersect(userClaims).Count() < 1) {
+                return StatusCode(403);
+            }
             return "This message is top secret!";
         }
 
@@ -28,6 +33,7 @@ namespace AuthSample {
                 var key = SecurityService.GetSecurityKey();
                 var signingCredentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
                 var identity = new ClaimsIdentity(new GenericIdentity(creds.UserName, "username"));
+                identity.AddClaims(GetClaims());
 
                 var handler = new JwtSecurityTokenHandler();
                 var token = handler.CreateToken(new SecurityTokenDescriptor() {
