@@ -62,7 +62,7 @@ namespace NetworkAnalysisDemo {
             Console.WriteLine($"Discareded Incoming Packets: {ipStats.ReceivedPacketsDiscarded}");
             Console.WriteLine($"Discarded Outgoing Packets: {ipStats.OutputPacketsDiscarded}");
             Console.WriteLine($"Fragmentation Failures: {ipStats.PacketFragmentFailures}");
-            Console.WriteLine($"Reassembly Failures: {ipStats.}");
+            Console.WriteLine($"Reassembly Failures: {ipStats.PacketReassemblyFailures}");
         }
     }
 }
