@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
-using System.Security.Authentication;
-using System.Security.Cryptography.X509Certificates;
 
 namespace DemoTLS {
     [Route("demo/[controller]")]
