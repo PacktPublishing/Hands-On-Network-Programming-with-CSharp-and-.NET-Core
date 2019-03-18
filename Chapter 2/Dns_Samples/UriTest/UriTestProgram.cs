@@ -24,7 +24,7 @@ namespace UriTest
             // Expected output: http://packt.com
 
             var constructorUri = GetSimpleUri_Constructor();
-            Console.WriteLine(simpleUri.ToString());
+            Console.WriteLine(constructorUri.ToString());
             // Expected output: http://packt.com
 
             Thread.Sleep(10000);

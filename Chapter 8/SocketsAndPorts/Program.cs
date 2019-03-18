@@ -42,6 +42,7 @@ namespace SocketsAndPorts {
             
             socket.Disconnect(false);
             socket.Dispose();
+            Thread.Sleep(10000);
         }
 
         private static string GetRequestMessage(string server, int port, string path) {
