@@ -11,6 +11,8 @@ namespace FtpSampleApp {
             Console.WriteLine(await GetDirectoryListing());
             Console.WriteLine(await RequestFile());
             Console.WriteLine(await PushFile());
+
+            Thread.Sleep(5000);
         }
 
         public static async Task<string> GetDirectoryListing() {
@@ -19,7 +21,7 @@ namespace FtpSampleApp {
             req.Method = WebRequestMethods.Ftp.ListDirectoryDetails;
 
             req.Credentials = new NetworkCredential("s_burns", "test_password");
-            req.EnableSsl = true;
+            req.EnableSsl = false;
 
             FtpWebResponse resp = (FtpWebResponse)await req.GetResponseAsync();
 
