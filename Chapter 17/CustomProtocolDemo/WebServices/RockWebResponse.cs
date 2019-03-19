@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Net;
-using System.Collections.Generic;
-using System.Text;
 using System.IO;
 
 namespace CustomProtocolDemo {
@@ -24,7 +22,6 @@ public class RockWebResponse : WebResponse {
     }
 
     private bool ValidateHeaders(byte[] header) {
-        //validate headers
         return true;
     }
 }

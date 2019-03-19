@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using System.Security.Claims;
 using System.IdentityModel.Tokens.Jwt;
 using Microsoft.AspNetCore.Authorization;
@@ -52,9 +51,9 @@ namespace AuthSample {
 
         private IEnumerable<Claim> GetClaims() {
             return new List<Claim>() {
-    new Claim("secret_access", "true"),
-    new Claim("excellent_code", "true")
-  };
+                new Claim("secret_access", "true"),
+                new Claim("excellent_code", "true")
+            };
         }
     }
 }
